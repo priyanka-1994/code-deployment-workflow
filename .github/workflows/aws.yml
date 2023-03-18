@@ -24,6 +24,9 @@ jobs:
           aws-access-key-id: AKIAXQAABPMX5MWN7FOY
           aws-secret-access-key: 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
           aws-region: ${{ env.AWS_REGION }}
+      - name: Login to ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
       
       - name: Build,tag and push image to ECR
         id: build-image
