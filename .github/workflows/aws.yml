@@ -31,7 +31,7 @@ jobs:
           ECR_REGISTRY: "515396172591.dkr.ecr.ap-south-1.amazonaws.com"
           ECR_REPOSITORY: "app_repo"
           IMAGE_TAG: latest
-        run:
+        run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "::set-output name-image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
