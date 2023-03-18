@@ -4,6 +4,6 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt 
 RUN pip install flask 
 COPY . .
-EXPOSE 3000
+EXPOSE 80
 CMD ["python","./python-flask.py","--host 0.0.0.0"]
 
