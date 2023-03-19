@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:515396172591:task-definition/app",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:515396172591:task-definition/app:3",
     "containerDefinitions": [
         {
             "name": "app",
@@ -23,9 +23,9 @@
     "taskRoleArn": "arn:aws:iam::515396172591:role/ecstaskexecution",
     "executionRoleArn": "arn:aws:iam::515396172591:role/ecstaskexecution",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
-    "status": "INACTIVE",
+    "status": "ACTIVE",
     "requiresAttributes": [
         {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
@@ -53,8 +53,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2023-03-17T09:22:48.657Z",
-    "deregisteredAt": "2023-03-17T10:32:21.356Z",
+    "registeredAt": "2023-03-19T23:45:54.993Z",
     "registeredBy": "arn:aws:iam::515396172591:root",
     "tags": []
 }
